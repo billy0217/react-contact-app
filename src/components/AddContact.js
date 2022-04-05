@@ -37,7 +37,7 @@ class AddContact extends React.Component {
 							type="text"
 							name="name"
 							placeholder="name"
-							valeu={this.state.name}
+							value={this.state.name}
 							onChange={
 								(e)=> this.setState({name: e.target.value})
 							}
@@ -49,7 +49,7 @@ class AddContact extends React.Component {
 							type="email"
 							name="email"
 							placeholder="email"
-							valeu={this.state.email}
+							value={this.state.email}
 							onChange={
 								(e)=> this.setState({email: e.target.value})
 							}

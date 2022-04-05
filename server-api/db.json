@@ -1,0 +1,24 @@
+{
+  "contacts": [
+    {
+      "id": "0b983dcd-6194-4a9f-ab89-32acc82fc2d2",
+      "name": "Test",
+      "email": "test@test.com"
+    },
+    {
+      "id": "e1ab98d9-dce1-4db1-ab51-e71f558642b5",
+      "name": "test 1",
+      "email": "e@email.com"
+    },
+    {
+      "id": "d2629803-14e1-4deb-8496-ec9737101695",
+      "name": "test update",
+      "email": "ea@eamil.com"
+    },
+    {
+      "id": "e52376b0-a0ef-45d8-863f-3032d193a331",
+      "name": "apitest",
+      "email": "test@eamil.com"
+    }
+  ]
+}
