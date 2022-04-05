@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import user from '../img/logo.svg'
 
 const ContactCard = (props) => {
@@ -7,10 +8,17 @@ const ContactCard = (props) => {
 
 	return(
 		<div className="item">
+			<img className="ui avatar image" src={user} alt="user" />
 			<div className="content">
-				<img className="ui avatar image" src={user} alt="user" />
-				<div className="header">{name}</div>
-				<div className="">{email}</div>
+				<Link 
+					to={{ 
+						pathname: `/contact/${id}`,
+					}}
+					state={{contact: props.contact}}
+				>
+					<div className="header">{name}</div>
+					<div className="">{email}</div>
+				</Link>
 			</div>
 			<i
 				className="trash alternate outline icon"

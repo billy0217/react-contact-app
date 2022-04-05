@@ -1,26 +1,26 @@
-import React from "react";
+import * as React from "react";
+import { useNavigate } from 'react-router-dom';
 
 class AddContact extends React.Component {
-
+	
 	state = {
 		name: "",
 		email: ""
 	}
 
 	add = (e) => {
+		
 		e.preventDefault();
+		//history("/" , { replace: true });
+		
 		if(this.state.name === "" || this.state.email === ""){
 			alert("All field are madatory");
 			return
 		}
 
 		this.props.addContactHandler(this.state)
-		this.setState(
-			{
-				name: '',
-				email: ''
-			}
-		)
+		this.setState({ name: "", email: "" });
+		window.location.href = '/';
 	}
 
 	render() {
